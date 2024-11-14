@@ -1,4 +1,5 @@
 import React from "react";
+import { GoBell, GoCloudDownload, GoDatabase } from "react-icons/go";
 import Button from "./Button";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div>
       <div>
         <Button rounded outline primary>
+          <GoBell />
           TJ
         </Button>
       </div>
@@ -16,11 +18,13 @@ function App() {
       </div>
       <div>
         <Button outline success>
+          <GoCloudDownload />
           Kris
         </Button>
       </div>
       <div>
         <Button warning outline>
+          <GoDatabase />
           Mich
         </Button>
       </div>
