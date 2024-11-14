@@ -5,16 +5,16 @@ function App() {
   return (
     <div>
       <div>
-        <Button></Button>
+        <Button>TJ</Button>
       </div>
       <div>
-        <Button></Button>
+        <Button>Titi</Button>
       </div>
       <div>
-        <Button></Button>
+        <Button>Kris</Button>
       </div>
       <div>
-        <Button></Button>
+        <Button>Mich</Button>
       </div>
     </div>
   );
