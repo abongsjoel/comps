@@ -5,16 +5,22 @@ function App() {
   return (
     <div>
       <div>
-        <Button>TJ</Button>
+        <Button rounded outline primary>
+          TJ
+        </Button>
       </div>
       <div>
-        <Button>Titi</Button>
+        <Button rounded secondary>
+          Titi
+        </Button>
       </div>
       <div>
-        <Button>Kris</Button>
+        <Button outline success>
+          Kris
+        </Button>
       </div>
       <div>
-        <Button>Mich</Button>
+        <Button danger>Mich</Button>
       </div>
     </div>
   );
