@@ -28,7 +28,12 @@ function App() {
         <Button danger>Ngwe</Button>
       </div>
       <div>
-        <Button>Mangwi</Button>
+        <Button rounded>Mangwi</Button>
+      </div>
+      <div>
+        <Button rounded outline success>
+          Baby Mas
+        </Button>
       </div>
     </div>
   );
