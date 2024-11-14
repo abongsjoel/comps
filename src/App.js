@@ -20,7 +20,15 @@ function App() {
         </Button>
       </div>
       <div>
-        <Button danger>Mich</Button>
+        <Button warning outline>
+          Mich
+        </Button>
+      </div>
+      <div>
+        <Button danger>Ngwe</Button>
+      </div>
+      <div>
+        <Button>Mangwi</Button>
       </div>
     </div>
   );
