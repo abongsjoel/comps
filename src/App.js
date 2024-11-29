@@ -1,49 +1,25 @@
 import React from "react";
-import { GoBell, GoCloudDownload, GoDatabase } from "react-icons/go";
-import Button from "./Button";
+import Accordion from "./components/Accordion";
 
 function App() {
-  const handleClick = () => {
-    console.log("You have clicked me");
-  };
-  return (
-    <div>
-      <div>
-        <Button rounded outline primary onClick={handleClick}>
-          <GoBell />
-          TJ
-        </Button>
-      </div>
-      <div>
-        <Button rounded secondary>
-          Titi
-        </Button>
-      </div>
-      <div>
-        <Button outline success>
-          <GoCloudDownload />
-          Kris
-        </Button>
-      </div>
-      <div>
-        <Button warning outline>
-          <GoDatabase />
-          Mich
-        </Button>
-      </div>
-      <div>
-        <Button danger>Ngwe</Button>
-      </div>
-      <div>
-        <Button rounded>Mangwi</Button>
-      </div>
-      <div>
-        <Button rounded outline success>
-          Baby Mas
-        </Button>
-      </div>
-    </div>
-  );
+  const items = [
+    {
+      id: "l1",
+      label: "Can I use React on a project?",
+      content: "You can use React on any project you want",
+    },
+    {
+      id: "l2",
+      label: "Can I use JavaScript on a project?",
+      content: "You can use JavaScript on any project you want",
+    },
+    {
+      id: "l3",
+      label: "Can I use TypeScript on a project?",
+      content: "You can use TypeScript on any project you want",
+    },
+  ];
+  return <Accordion items={items} />;
 }
 
 export default App;
