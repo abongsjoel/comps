@@ -17,16 +17,19 @@ function Accordion({ items }) {
 
     return (
       <div key={item.id}>
-        <div onClick={() => handleClick(index)}>
-          {icon}
+        <div
+          className="flex justify-between p-3 bg-gray-50 border-b items-center cursor-pointer"
+          onClick={() => handleClick(index)}
+        >
           {item.label}
+          {icon}
         </div>
-        {isExpanded && <div>{item.content}</div>}
+        {isExpanded && <div className="border-b p-5">{item.content}</div>}
       </div>
     );
   });
 
-  return <div>{rendereditems}</div>;
+  return <div className="border-x border-t rounded">{rendereditems}</div>;
 }
 
 export default Accordion;
