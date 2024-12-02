@@ -1,7 +1,8 @@
 import React from "react";
+import Dropdown from "./components/Dropdown";
 
 function App() {
-  return <div>App</div>;
+  return <Dropdown />;
 }
 
 export default App;
