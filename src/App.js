@@ -1,8 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Dropdown from "./components/Dropdown";
 
 function App() {
   const [selection, setSelection] = useState(null);
+
+  useEffect(() => {
+    const handle = (event) => {
+      console.log(event.target);
+    };
+
+    document.addEventListener("click", handle, true);
+
+    return () => {
+      document.removeEventListener("click", handle);
+    };
+  }, []);
 
   const handleSelect = (option) => {
     setSelection(option);
@@ -15,7 +27,9 @@ function App() {
   ];
 
   return (
-    <Dropdown options={options} value={selection} onChange={handleSelect} />
+    <div className="flex mx-2">
+      <Dropdown options={options} value={selection} onChange={handleSelect} />
+    </div>
   );
 }
 
