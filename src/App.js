@@ -1,20 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Dropdown from "./components/Dropdown";
 
 function App() {
   const [selection, setSelection] = useState(null);
-
-  useEffect(() => {
-    const handle = (event) => {
-      console.log(event.target);
-    };
-
-    document.addEventListener("click", handle, true);
-
-    return () => {
-      document.removeEventListener("click", handle);
-    };
-  }, []);
 
   const handleSelect = (option) => {
     setSelection(option);
