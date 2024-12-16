@@ -13,35 +13,35 @@ function ButtonPage() {
       <div>
         <Button rounded outline primary onClick={handleClick}>
           <GoBell />
-          TJ
+          Primary Rounded Outlined
         </Button>
       </div>
       <div>
         <Button rounded secondary>
-          Titi
+          Secondary Rounded
         </Button>
       </div>
       <div>
         <Button outline success>
           <GoCloudDownload />
-          Kris
+          Success Outlined
         </Button>
       </div>
       <div>
         <Button warning outline>
           <GoDatabase />
-          Mich
+          Warning Outlined
         </Button>
       </div>
       <div>
-        <Button danger>Ngwe</Button>
+        <Button danger>Danger</Button>
       </div>
       <div>
-        <Button rounded>Mangwi</Button>
+        <Button rounded>Rounded</Button>
       </div>
       <div>
         <Button rounded outline success>
-          Baby Mas
+          Success Rounded Outlined
         </Button>
       </div>
     </div>
