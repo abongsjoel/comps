@@ -1,8 +1,8 @@
-import ClassComp from "./components/ClassComp";
 import Route from "./components/Route";
 import Sidebar from "./components/Sidebar";
 import AccordionPage from "./pages/AccordionPage";
 import ButtonPage from "./pages/ButtonPage";
+import ClassCompPage from "./pages/ClassCompPage";
 import DropdownPage from "./pages/DropdownPage";
 import ModalPage from "./pages/ModalPage";
 
@@ -24,7 +24,7 @@ function App() {
           <ModalPage />
         </Route>
         <Route path="/classcomp">
-          <ClassComp />
+          <ClassCompPage />
         </Route>
       </div>
     </div>
