@@ -7,6 +7,7 @@ function Sidebar() {
     { label: "Button", path: "/buttons" },
     { label: "Modal", path: "/modal" },
     { label: "ClassComp", path: "/classcomp" },
+    { label: "Table", path: "/table" },
   ];
 
   return (

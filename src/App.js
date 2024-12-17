@@ -5,6 +5,7 @@ import ButtonPage from "./pages/ButtonPage";
 import ClassCompPage from "./pages/ClassCompPage";
 import DropdownPage from "./pages/DropdownPage";
 import ModalPage from "./pages/ModalPage";
+import TablePage from "./pages/TablePage";
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
         </Route>
         <Route path="/classcomp">
           <ClassCompPage />
+        </Route>
+        <Route path="/table">
+          <TablePage />
         </Route>
       </div>
     </div>
