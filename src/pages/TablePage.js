@@ -23,7 +23,7 @@ function TablePage() {
     {
       label: "Score",
       render: (fruit) => fruit.score,
-      sortValue: (fruit) => fruit.scroe,
+      sortValue: (fruit) => fruit.score,
     },
   ];
 

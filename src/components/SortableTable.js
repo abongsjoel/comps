@@ -5,25 +5,12 @@ function SortableTable(props) {
   const [sortOrder, setSortOrder] = useState(null);
   const [sortBy, setSortBy] = useState(null);
 
-  const { config } = props;
+  const { config, data } = props;
 
   const updatedCongig = config.map((column) => {
     if (!column.sortValue) {
       return column;
     }
-
-    const handleClick = (label) => {
-      if (sortOrder === null) {
-        setSortOrder("asc");
-        setSortBy(label);
-      } else if (sortOrder === "asc") {
-        setSortOrder("desc");
-        setSortBy(label);
-      } else if (sortOrder === "desc") {
-        setSortOrder(null);
-        setSortBy(null);
-      }
-    };
 
     return {
       ...column,
@@ -35,10 +22,41 @@ function SortableTable(props) {
     };
   });
 
+  const handleClick = (label) => {
+    if (sortOrder === null) {
+      setSortOrder("asc");
+      setSortBy(label);
+    } else if (sortOrder === "asc") {
+      setSortOrder("desc");
+      setSortBy(label);
+    } else if (sortOrder === "desc") {
+      setSortOrder(null);
+      setSortBy(null);
+    }
+  };
+
+  let sortedData = data;
+
+  if (sortOrder && sortBy) {
+    const { sortValue } = config.find((column) => column.label === sortBy);
+    sortedData = [...data].sort((a, b) => {
+      const valueA = sortValue(a);
+      const valueB = sortValue(b);
+
+      const reverseOrder = sortOrder === "asc" ? 1 : -1;
+
+      if (typeof valueA === "string") {
+        return valueA.localeCompare(valueB) * reverseOrder;
+      } else {
+        return (valueA - valueB) * reverseOrder;
+      }
+    });
+  }
+
   return (
     <div>
       {sortOrder} - {sortBy}
-      <Table {...props} config={updatedCongig} />
+      <Table {...props} data={sortedData} config={updatedCongig} />
     </div>
   );
 }
