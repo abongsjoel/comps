@@ -9,6 +9,7 @@ function Sidebar() {
     { label: "ClassComp", path: "/classcomp" },
     { label: "Table", path: "/table" },
     { label: "Menu", path: "/menu" },
+    { label: "Generator", path: "/generator" },
   ];
 
   return (
