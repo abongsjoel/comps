@@ -3,6 +3,7 @@ import Sidebar from "./components/Sidebar";
 import AccordionPage from "./pages/AccordionPage";
 import ButtonPage from "./pages/ButtonPage";
 import ClassCompPage from "./pages/ClassCompPage";
+import CounterPage from "./pages/CounterPage";
 import DropdownPage from "./pages/DropdownPage";
 import GeneratorPage from "./pages/GeneratorPage";
 import MenuPage from "./pages/MenuPage";
@@ -37,6 +38,9 @@ function App() {
         </Route>
         <Route path="/generator">
           <GeneratorPage />
+        </Route>
+        <Route path="/counter">
+          <CounterPage initialCount={10} />
         </Route>
       </div>
     </div>

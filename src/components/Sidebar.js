@@ -10,6 +10,7 @@ function Sidebar() {
     { label: "Table", path: "/table" },
     { label: "Menu", path: "/menu" },
     { label: "Generator", path: "/generator" },
+    { label: "Counter", path: "/counter" },
   ];
 
   return (
