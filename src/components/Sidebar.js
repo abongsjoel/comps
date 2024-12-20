@@ -8,6 +8,9 @@ function Sidebar() {
     { label: "Modal", path: "/modal" },
     { label: "ClassComp", path: "/classcomp" },
     { label: "Table", path: "/table" },
+    { label: "Menu", path: "/menu" },
+    { label: "Generator", path: "/generator" },
+    { label: "Counter", path: "/counter" },
   ];
 
   return (
