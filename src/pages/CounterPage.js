@@ -3,7 +3,21 @@ import Button from "../components/Button";
 import Panel from "../components/Panel";
 
 const reducer = (state, action) => {
-  //
+  if (action.type === "increment") {
+    return {
+      ...state,
+      count: state.count + 1,
+    };
+  }
+
+  if (action.type === "cnange-value-to-add") {
+    return {
+      ...state,
+      valueToAdd: action.payload,
+    };
+  }
+
+  return state;
 };
 
 const CounterPage = ({ initialCount }) => {
@@ -16,7 +30,9 @@ const CounterPage = ({ initialCount }) => {
   });
 
   const increment = () => {
-    // setCount(count + 1);
+    dispatch({
+      type: "increment",
+    });
   };
 
   const decrement = () => {
@@ -25,7 +41,10 @@ const CounterPage = ({ initialCount }) => {
 
   const handleChange = (event) => {
     const value = parseInt(event.target.value) || 0;
-    // setValueToAdd(value);
+    dispatch({
+      type: "cnange-value-to-add",
+      payload: value,
+    });
   };
 
   const handleSubmit = (event) => {
