@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const useCounter = (initialCount) => {
   const [count, setCount] = useState(initialCount);
