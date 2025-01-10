@@ -36,16 +36,33 @@ function App() {
 export default App;
 ```
 
-## Components
+## Built With
 
-- **Component1**: Description of Component1.
-- **Component2**: Description of Component2.
-- **Component3**: Description of Component3.
+- Vite
+- React
+- Redux
+- Redux Toolkit Query
+- JavaScript
+- Tailwindcss
+
+## Author
+
+👤 **Chi A. Joel**
+
+- GitHub: [@abongsjoel](https://github.com/abongsjoel)
+- Twitter: [@thierryjoel10](https://twitter.com/ThierryJoel10)
+- LinkedIn: [Chi Abongwa Joel](https://www.linkedin.com/in/joel-chi-b4285a97/)
 
 ## Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request.
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/abongsjoel/media/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
 
 ## License
 
-This project is licensed under the MIT License.
+  <p>This project is <a href="../main/LICENSE">MIT</a> licensed.</p>
