@@ -38,10 +38,8 @@ export default App;
 
 ## Built With
 
-- Vite
+- Create React App
 - React
-- Redux
-- Redux Toolkit Query
 - JavaScript
 - Tailwindcss
 
